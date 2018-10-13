@@ -25,7 +25,10 @@ a {
 
 
 /*====================header start=====================*/
-
+section{
+	width: 100%;
+	height: 700px;
+}
 hr {
 	margin-top: -10px;
 }
@@ -169,16 +172,82 @@ hr {
 	margin-right: auto;
 }
 
-.glyphicon-align-justify {
-	width: 80px;
-	height: 80px;
-	font-size: 20px;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+.three_span{
+	width: 25px;
+	height: 40px;
+	float: right;
+	position: relative;
+	right: 50px;
+	margin-top: 28px;
+}
+.three_span span{
+	position: absolute;
+	display: block;
+	background: #ffffff;
+	width: 100%;
+	height: 3px;
+	
 }
 
+.three_span span:nth-child(1){
+	top: 20px;
+}
+.three_span span:nth-child(2){
+	top: 28px;
+}
+.three_span span:nth-child(3){
+	top: 36px;
+}
 
+.three_span_open span:nth-child(1){
+	top: 20px;
+	transform:rotate(45deg);
+	width: 20px;
+	margin-left: 5px;
+	transition: all 0.3s ease-in-out;
+
+}
+.three_span_open span:nth-child(2){
+	top: 28px;
+	margin-left: -8px;
+	width: 30px;
+}
+.three_span_open span:nth-child(3){
+	top: 36px;
+	transform:rotate(-45deg);
+	width: 20px;
+	margin-left: 5px;
+	transition: all 0.3s ease-in-out;
+}
+.main_open{
+	position: relative;
+	width: 100%;
+	height: 700px;
+	left: -300px;
+	}
+.nav{
+	background: #000000;
+	position: fixed;
+	width: 300px;
+	height: 700px;
+	float: right;
+	right: 0;
+	z-index: 10;
+	visibility: hidden;
+}
+.tigger_open{
+	background: #000000;
+	position: fixed;
+	width: 300px;
+	height: 700px;
+	float: right;
+	right: 0;
+	z-index: 10;
+	visibility: visible;
+	transition: all 0.3s ease-in-out;
+	transform: translate(0,0,100%); 
+	
+}
 /*====================header end=====================*/
 
 
